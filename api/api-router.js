@@ -10,6 +10,8 @@ router.get('/', (req, res) => {
   res.status(200).json({ api: 'up' });
 });
 
+
+//GET shouts
 router.get('/shouts', (req, res, next) => {
   Shouts.find()
     .then(shouts => {
